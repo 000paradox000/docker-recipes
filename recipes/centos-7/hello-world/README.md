@@ -33,3 +33,9 @@ cd recipes/centos-7/hello-world
 docker-compose up
 docker-compose down --rmi all -v --remove-orphans
 ```
+
+## See it in action
+
+![Recipes Centos 7 Hello World in Action](./docs/recipes-centos-7-hello-world.gif "Recipes Centos 7 Hello World in Action")
+
+
