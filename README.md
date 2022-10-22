@@ -16,7 +16,10 @@ improvement.
 
 - [Hello World](recipes/debian-latest/hello-world/README.md)
 
-### Ubuntu
+### Ubuntu Latest
+
+- [Hello World](recipes/ubuntu-latest/hello-world/README.md)
+
 ### Rocky Linux 8.5
 ### Rocky Linux 8.6
 ### Rocky Linux 9
