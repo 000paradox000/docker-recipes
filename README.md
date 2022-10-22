@@ -12,7 +12,10 @@ improvement.
 
 - [Hello World](recipes/centos-7/hello-world/README.md)
 
-### Debian
+### Debian Latest
+
+- [Hello World](recipes/debian-latest/hello-world/README.md)
+
 ### Ubuntu
 ### Rocky Linux 8.5
 ### Rocky Linux 8.6
