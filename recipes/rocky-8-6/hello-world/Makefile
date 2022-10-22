@@ -1,4 +1,4 @@
-IMAGE_NAME = recipes_debian_latest_hello_world_image
+IMAGE_NAME = recipes_rocky_8_6_hello_world_image
 
 run:
 	make build

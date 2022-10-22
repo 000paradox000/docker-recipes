@@ -21,9 +21,9 @@ Using docker cli:
 
 ```shell
 cd recipes/centos-7/hello-world
-docker build -t docker_recipes_recipes_centos_7_hello_world .
-docker run --rm -t docker_recipes_recipes_centos_7_hello_world
-docker image rm docker_recipes_recipes_centos_7_hello_world
+docker build -t recipes_centos_7_hello_world_image .
+docker run --rm -t recipes_centos_7_hello_world_image
+docker image rm recipes_centos_7_hello_world_image
 ```
 
 Using docker compose:
@@ -37,5 +37,3 @@ docker-compose down --rmi all -v --remove-orphans
 ## See it in action
 
 ![Recipes Centos 7 Hello World in Action](./docs/recipes-centos-7-hello-world.gif "Recipes Centos 7 Hello World in Action")
-
-

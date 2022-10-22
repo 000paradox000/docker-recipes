@@ -21,9 +21,9 @@ Using docker cli:
 
 ```shell
 cd recipes/ubuntu-latest/hello-world
-docker build -t docker_recipes_recipes_debian_latest_hello_world .
-docker run --rm -t docker_recipes_recipes_debian_latest_hello_world
-docker image rm docker_recipes_recipes_debian_latest_hello_world
+docker build -t recipes_debian_latest_hello_world_image .
+docker run --rm -t recipes_debian_latest_hello_world_image
+docker image rm recipes_debian_latest_hello_world_image
 ```
 
 Using docker compose:

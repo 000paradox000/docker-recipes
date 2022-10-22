@@ -1,4 +1,4 @@
-IMAGE_NAME = CONTAINER_IMAGE_NAME
+IMAGE_NAME = <container_image_name>
 
 run:
 	make build

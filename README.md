@@ -25,4 +25,9 @@ improvement.
 - [Hello World](recipes/rocky-8-5/hello-world/README.md)
 
 ### Rocky Linux 8.6
+
+- [Hello World](recipes/rocky-8-6/hello-world/README.md)
+
 ### Rocky Linux 9
+
+- [Hello World](recipes/rocky-9/hello-world/README.md)

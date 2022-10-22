@@ -1,4 +1,4 @@
-IMAGE_NAME = docker_recipes_recipes_centos_7_hello_world_image
+IMAGE_NAME = recipes_centos_7_hello_world_image
 
 run:
 	make build

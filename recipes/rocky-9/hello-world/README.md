@@ -1,4 +1,4 @@
-# Personal Recipes of Docker &rarr; Rocky 8.5 &rarr; Hello World
+# Personal Recipes of Docker &rarr; Rocky 9 &rarr; Hello World
 [Back](../../../README.md)
 
 ## Description
@@ -21,19 +21,19 @@ Using docker cli:
 
 ```shell
 cd PATH
-docker build -t recipes_rocky_8_5_hello_world_image .
-docker run --rm -t recipes_rocky_8_5_hello_world_image
-docker image rm recipes_rocky_8_5_hello_world_image
+docker build -t recipes_rocky_9_hello_world_image .
+docker run --rm -t recipes_rocky_9_hello_world_image
+docker image rm recipes_rocky_9_hello_world_image
 ```
 
 Using docker compose:
 
 ```shell
-cd recipes/rocky-8-5/hello-world
+cd recipes/rocky-9/hello-world
 docker-compose up
 docker-compose down --rmi all -v --remove-orphans
 ```
 
 ## See it in action
 
-![Recipes Rocky 8.5 Hello World in Action](./docs/recipes-rocky-8-5-hello-world.gif "Recipes Rocky 8.5 Hello World in Action")
+![Recipes Rocky 9 Hello World in Action](./docs/recipes-rocky-9-hello-world.gif "Recipes Rocky 9 Hello World in Action")

@@ -1,4 +1,4 @@
-# Personal Recipes of Docker &rarr; OPERATING_SYSTEM &rarr; Hello World
+# Personal Recipes of Docker &rarr; <operating_system> &rarr; Hello World
 [Back](../../../README.md)
 
 ## Description
@@ -21,21 +21,19 @@ Using docker cli:
 
 ```shell
 cd PATH
-docker build -t docker_recipes_recipes_centos_7_hello_world .
-docker run --rm -t docker_recipes_recipes_centos_7_hello_world
-docker image rm docker_recipes_recipes_centos_7_hello_world
+docker build -t <container_image_name> .
+docker run --rm -t <container_image_name>
+docker image rm <container_image_name>
 ```
 
 Using docker compose:
 
 ```shell
-cd recipes/centos-7/hello-world
+cd recipes/<folder_name>/hello-world
 docker-compose up
 docker-compose down --rmi all -v --remove-orphans
 ```
 
 ## See it in action
 
-![Recipes Centos 7 Hello World in Action](./docs/recipes-centos-7-hello-world.gif "Recipes Centos 7 Hello World in Action")
-
-
+![Recipes <operating_system> Hello World in Action](./docs/recipes-<folder_name>-hello-world.gif "Recipes <operating_system> Hello World in Action")
