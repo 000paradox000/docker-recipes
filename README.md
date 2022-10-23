@@ -15,10 +15,12 @@ improvement.
 ### Debian Latest
 
 - [Hello World](recipes/debian-latest/hello-world/README.md)
+- [Office to PDF](recipes/debian-latest/office-to-pdf/README.md)
 
 ### Ubuntu Latest
 
 - [Hello World](recipes/ubuntu-latest/hello-world/README.md)
+- [Office to PDF](recipes/ubuntu-latest/office-to-pdf/README.md)
 
 ### Rocky Linux 8.5
 

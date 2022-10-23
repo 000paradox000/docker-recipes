@@ -1,7 +1,6 @@
-FROM debian:latest
+FROM <dockerfile_image_and_tag>
 
-RUN apt update && \
-    apt install -y --no-install-recommends libreoffice default-jre
+RUN <dockerfile_installation_line>
 
 COPY ./entrypoint.sh /
 

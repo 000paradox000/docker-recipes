@@ -1,4 +1,4 @@
-IMAGE_NAME = <container_image_name>
+IMAGE_NAME = recipes_debian_latest_office_to_pdf_image
 
 run:
 	make build

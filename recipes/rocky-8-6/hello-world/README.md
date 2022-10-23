@@ -13,14 +13,14 @@ There are various options to run this recipe, you can use any of them.
 Using make:
 
 ```shell
-cd PATH
+cd recipes/rocky-8-6/hello-world
 make run
 ```
 
 Using docker cli:
 
 ```shell
-cd PATH
+cd recipes/rocky-8-6/hello-world
 docker build -t recipes_rocky_8_6_hello_world_image .
 docker run --rm -t recipes_rocky_8_6_hello_world_image
 docker image rm recipes_rocky_8_6_hello_world_image
