@@ -33,7 +33,3 @@ cd recipes/rocky-8-5/office-to-pdf
 docker-compose up
 docker-compose down --rmi all -v --remove-orphans
 ```
-
-## See it in action
-
-![Recipes Rocky 8.5 Office to PDF in Action](./docs/recipes-rocky-8-5-office-to-pdf.gif "Recipes Rocky 8.5 Office to PDF in Action")
