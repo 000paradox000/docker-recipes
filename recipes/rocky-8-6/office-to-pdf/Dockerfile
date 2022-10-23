@@ -1,4 +1,4 @@
-FROM rocky:8.6
+FROM rockylinux:8.6
 
 RUN yum install -y libreoffice
 
