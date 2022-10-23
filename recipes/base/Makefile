@@ -81,3 +81,54 @@ add-recipe-for-office-to-pdf-centos-7:
 			"office-to-pdf" \
 			"Office to PDF" \
 			"yum install -y libreoffice"
+
+add-recipe-for-office-to-pdf-rocky-8-5:
+    # Folder name (i.e. centos-7 or debian-latest)
+    # Dockerfile image and tag (i.e. centos:7 or debian:latest)
+    # Container image name (i.e. recipes_centos_7_hello_world_image)
+	# Operating system (i.e. Centos 7)
+	# Recipe slug (i.e. office-to-pdf)
+	# Recipe title (i.e. Office to PDF)
+	# Dockerfile installation line (i.e. apt update && apt -y install libreoffice)
+	python office-to-pdf/add_recipe.py \
+			"rocky-8-5" \
+			"rocky:8.5" \
+			"recipes_rocky_8_5_office_to_pdf_image" \
+			"Rocky 8.5" \
+			"office-to-pdf" \
+			"Office to PDF" \
+			"yum install -y libreoffice"
+
+add-recipe-for-office-to-pdf-rocky-8-6:
+    # Folder name (i.e. centos-7 or debian-latest)
+    # Dockerfile image and tag (i.e. centos:7 or debian:latest)
+    # Container image name (i.e. recipes_centos_7_hello_world_image)
+	# Operating system (i.e. Centos 7)
+	# Recipe slug (i.e. office-to-pdf)
+	# Recipe title (i.e. Office to PDF)
+	# Dockerfile installation line (i.e. apt update && apt -y install libreoffice)
+	python office-to-pdf/add_recipe.py \
+			"rocky-8-6" \
+			"rocky:8.6" \
+			"recipes_rocky_8_6_office_to_pdf_image" \
+			"Rocky 8.6" \
+			"office-to-pdf" \
+			"Office to PDF" \
+			"yum install -y libreoffice"
+
+add-recipe-for-office-to-pdf-rocky-9:
+    # Folder name (i.e. centos-7 or debian-latest)
+    # Dockerfile image and tag (i.e. centos:7 or debian:latest)
+    # Container image name (i.e. recipes_centos_7_hello_world_image)
+	# Operating system (i.e. Centos 7)
+	# Recipe slug (i.e. office-to-pdf)
+	# Recipe title (i.e. Office to PDF)
+	# Dockerfile installation line (i.e. apt update && apt -y install libreoffice)
+	python office-to-pdf/add_recipe.py \
+			"rocky-9" \
+			"rocky:9" \
+			"recipes_rocky_9_office_to_pdf_image" \
+			"Rocky 9" \
+			"office-to-pdf" \
+			"Office to PDF" \
+			"yum install -y libreoffice"

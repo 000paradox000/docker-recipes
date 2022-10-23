@@ -23,3 +23,6 @@ run-office-to-pdf:
 	cd debian-latest/office-to-pdf && make run
 	cd ubuntu-latest/office-to-pdf && make run
 	cd centos-7/office-to-pdf && make run
+	cd rocky-8-5/office-to-pdf && make run
+	cd rocky-8-6/office-to-pdf && make run
+	cd rocky-9/office-to-pdf && make run
