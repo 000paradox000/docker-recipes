@@ -22,3 +22,4 @@ run-hello-world:
 run-office-to-pdf:
 	cd debian-latest/office-to-pdf && make run
 	cd ubuntu-latest/office-to-pdf && make run
+	cd centos-7/office-to-pdf && make run
