@@ -11,6 +11,7 @@ improvement.
 ### Centos 7
 
 - [Hello World](recipes/centos-7/hello-world/README.md)
+- [Office to PDF](recipes/centos-7/office-to-pdf/README.md)
 
 ### Debian Latest
 

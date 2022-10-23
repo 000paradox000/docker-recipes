@@ -64,3 +64,20 @@ add-recipe-for-office-to-pdf-ubuntu-latest:
 			"office-to-pdf" \
 			"Office to PDF" \
 			"apt update && apt install -y --no-install-recommends libreoffice default-jre"
+
+add-recipe-for-office-to-pdf-centos-7:
+    # Folder name (i.e. centos-7 or debian-latest)
+    # Dockerfile image and tag (i.e. centos:7 or debian:latest)
+    # Container image name (i.e. recipes_centos_7_hello_world_image)
+	# Operating system (i.e. Centos 7)
+	# Recipe slug (i.e. office-to-pdf)
+	# Recipe title (i.e. Office to PDF)
+	# Dockerfile installation line (i.e. apt update && apt -y install libreoffice)
+	python office-to-pdf/add_recipe.py \
+			"centos-7" \
+			"centos:7" \
+			"recipes_centos_7_office_to_pdf_image" \
+			"Centos 7" \
+			"office-to-pdf" \
+			"Office to PDF" \
+			"yum install -y libreoffice"
