@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  pyside2app:
+    build: .
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/opt/src

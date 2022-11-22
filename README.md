@@ -17,6 +17,8 @@ improvement.
 
 - [Hello World](recipes/debian-latest/hello-world/README.md)
 - [Office to PDF](recipes/debian-latest/office-to-pdf/README.md)
+- [FastAPI CRUD](recipes/debian-latest/fastapi-crud/README.md)
+- [PySide2 App](recipes/debian-latest/pyside2-app/README.md)
 
 ### Ubuntu Latest
 

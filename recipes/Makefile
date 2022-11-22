@@ -10,6 +10,7 @@ ls-images:
 run-all:
 	make run-hello-world
 	make run-office-to-pdf
+	make run-pyside2-app
 
 run-hello-world:
 	cd centos-7/hello-world && make run
@@ -26,3 +27,6 @@ run-office-to-pdf:
 	cd rocky-8-5/office-to-pdf && make run
 	cd rocky-8-6/office-to-pdf && make run
 	cd rocky-9/office-to-pdf && make run
+
+run-pyside2-app:
+	cd debian-latest/pyside2-app && make run
