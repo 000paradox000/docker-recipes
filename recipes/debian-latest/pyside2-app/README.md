@@ -21,7 +21,12 @@ Using docker cli:
 ```shell
 cd recipes/debian-latest/pyside2-app
 docker build -t recipes_debian_latest_pyside2_app_image .
-docker run --rm -t recipes_debian_latest_pyside2_app_image
+xhost +
+docker run --rm -t \
+    -v "$(PWD)/src:/opt/src" \
+    -v "/tmp/.X11-unix:/tmp/.X11-unix" \
+    -e "DISPLAY=$(DISPLAY)" \
+    recipes_debian_latest_pyside2_app_image
 docker image rm recipes_debian_latest_pyside2_app_image
 ```
 

@@ -1,16 +1,13 @@
-IMAGE_NAME = recipes_debian_latest_pyside2_app_image
+IMAGE_NAME = recipes_debian_latest_pyside_app_image
 
 run:
+	#		-e "QT_DEBUG_PLUGINS=1" \
 	make build
-	docker run -it \
-		--user $(id -u) \
-		-e DISPLAY=unix$DISPLAY \
-		-v "/etc/group:/etc/group:ro" \
-		-v "/etc/passwd:/etc/passwd:ro" \
-		-v "/etc/shadow:/etc/shadow:ro" \
-		-v "/etc/sudoers.d:/etc/sudoers.d:ro" \
+	xhost +
+	docker run --rm -t \
 		-v "$(PWD)/src:/opt/src" \
 		-v "/tmp/.X11-unix:/tmp/.X11-unix" \
+		-e "DISPLAY=$(DISPLAY)" \
 		$(IMAGE_NAME)
 	make rm
 build:

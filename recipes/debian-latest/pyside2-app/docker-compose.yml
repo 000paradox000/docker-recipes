@@ -6,5 +6,7 @@ services:
     environment:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONUNBUFFERED=1
+      - DISPLAY=$DISPLAY
     volumes:
       - ./src:/opt/src
+      - /tmp/.X11-unix:/tmp/.X11-unix
