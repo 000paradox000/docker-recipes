@@ -1,7 +1,6 @@
 IMAGE_NAME = recipes_debian_latest_pyside_app_image
 
 run:
-	#		-e "QT_DEBUG_PLUGINS=1" \
 	make build
 	xhost +
 	docker run --rm -t \
