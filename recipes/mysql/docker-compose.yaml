@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: P@ssw0rd
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./config/custom.cnf:/etc/mysql/conf.d/custom.cnf
+      - ./scripts/sql_initdb:/docker-entrypoint-initdb.d
+      - ./data:/opt/data
