@@ -1,0 +1,1 @@
+SELECT id FROM agents ORDER BY id DESC;

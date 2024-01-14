@@ -2,7 +2,6 @@
 
 My personal recipes with docker.
 
-
 ## MySQL
 
 MySQL database container.
@@ -37,4 +36,3 @@ make down
 | User           | root                   |             |
 | Password       | P@ssw0rd               |             |
 | Host URL       | http://localhost:8501  |             |
-

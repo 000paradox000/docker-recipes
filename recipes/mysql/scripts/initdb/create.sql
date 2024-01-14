@@ -14,12 +14,14 @@ CREATE TABLE IF NOT EXISTS agents (
 );
 
 CREATE TABLE IF NOT EXISTS calls (
-    call_id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     agent_id INT,
     customer_id INT,
     picked_up SMALLINT,
     duration INT,
-    product_sold SMALLINT
+    product_sold SMALLINT,
+    FOREIGN KEY (agent_id) REFERENCES agents(id),
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
 
 LOAD DATA INFILE '/opt/data/csv/customers.csv'
