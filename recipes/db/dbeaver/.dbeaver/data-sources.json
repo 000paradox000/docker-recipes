@@ -1,0 +1,77 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18d09a8fa75-6c9ee55852d8461b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "PostgreSQL  - mydb",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5438",
+				"database": "mydb",
+				"url": "jdbc:postgresql://localhost:5438/mydb",
+				"configurationType": "MANUAL",
+				"home": "/usr",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18d09ab2be4-170419c34b3ed1e7": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "MySQL - mydb",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3308",
+				"database": "mydb",
+				"url": "jdbc:mysql://localhost:3308/mydb",
+				"configurationType": "MANUAL",
+				"home": "/usr",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"microsoft-18d09d9b075-2cd49cdd8b2fd5d4": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "MSSQL - mydb",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1438",
+				"database": "mydb",
+				"url": "jdbc:sqlserver://;serverName\u003dlocalhost;port\u003d1438;databaseName\u003dmydb",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "false",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
