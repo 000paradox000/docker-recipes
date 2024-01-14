@@ -4,6 +4,3 @@ up:
 
 down:
 	docker compose down
-
-clear:
-	docker system prune -af
