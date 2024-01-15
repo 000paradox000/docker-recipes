@@ -7,8 +7,7 @@ import shlex
 class INITDB:
     def __init__(self):
         self.initdb_dir = Path('/docker-entrypoint-initdb.d')
-        self.db_name = "mydb.db"
-        self.db_path = Path(self.db_name).resolve()
+        self.db_path = Path(os.environ["DB_PATH"]).resolve()
 
         self.create_db()
 

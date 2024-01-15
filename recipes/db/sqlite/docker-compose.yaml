@@ -8,8 +8,10 @@ services:
     environment:
       PYTHONUNBUFFERED: 1
       CSV_DATA: "agents|/opt/data/csv/agents.csv;customers|/opt/data/csv/customers.csv;calls|/opt/data/csv/calls.csv"
+      DB_PATH: "/opt/db/mydb.db"
     volumes:
       - ./scripts/initdb:/docker-entrypoint-initdb.d
       - ../data:/opt/data
+      - ./db:/opt/db
     ports:
       - "8504:8080"

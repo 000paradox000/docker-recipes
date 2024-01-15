@@ -2,4 +2,4 @@
 
 python initdb.py
 
-sqlite_web --host=0.0.0.0 --port=8080 --no-browser mydb.db
+sqlite_web --host=0.0.0.0 --port=8080 --no-browser $DB_PATH

@@ -58,6 +58,19 @@
 				},
 				"auth-model": "sqlserver_database"
 			}
+		},
+		"sqlite_jdbc-18d0b17d809-656c2083d06aed62": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - mydb",
+			"save-password": true,
+			"configuration": {
+				"database": "/home/aricalso/instances/github.com/000paradox000/000paradox000/docker-recipes/recipes/db/sqlite/db/mydb.db",
+				"url": "jdbc:sqlite:/home/aricalso/instances/github.com/000paradox000/000paradox000/docker-recipes/recipes/db/sqlite/db/mydb.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
