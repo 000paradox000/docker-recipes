@@ -31,6 +31,8 @@ make down
 
 ### Web client
 
+#### PHPMyAdmin
+
 | Item           | Value                  | Description |
 |----------------|------------------------|-------------|
 | User           | root                   |             |
@@ -65,6 +67,8 @@ make down
 ```
 
 ### Web client
+
+#### PGAdmin
 
 | Item           | Value                 | Description |
 |----------------|-----------------------|-------------|
@@ -101,5 +105,35 @@ make down
 
 ### Web client
 
+#### SQLPad
+
 | Item           | Value                 | Description |
 |----------------|-----------------------|-------------|
+| User           | admin@machine.pes     |             |
+| Password       | P@ssw0rd              |             |
+| Host URL       | http://localhost:8503 |             |
+
+## SQLite
+
+SQLite database container.
+
+### Quickstart
+
+Start
+```shell
+cd recipes/db/sqlite
+make up
+```
+
+Stop
+```shell
+make down
+```
+
+### Web client
+
+#### sqlite-web
+
+| Item           | Value                 | Description |
+|----------------|-----------------------|-------------|
+| Host URL       | http://localhost:8504 |             |

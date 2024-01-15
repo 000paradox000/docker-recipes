@@ -13,3 +13,20 @@ services:
       - ./scripts/initdb:/docker-entrypoint-initdb.d
       - ../data:/opt/data
 
+  sqlpad:
+    image: sqlpad/sqlpad
+    environment:
+      SQLPAD_ADMIN: 'admin@machine.pes'
+      SQLPAD_ADMIN_PASSWORD: 'P@ssw0rd'
+      SQLPAD_APP_LOG_LEVEL: info
+      SQLPAD_WEB_LOG_LEVEL: warn
+      SQLPAD_CONNECTIONS__sqlserverdemo__name: SQL Server
+      SQLPAD_CONNECTIONS__sqlserverdemo__driver: sqlserver
+      SQLPAD_CONNECTIONS__sqlserverdemo__host: db
+      SQLPAD_CONNECTIONS__sqlserverdemo__database: mydb
+      SQLPAD_CONNECTIONS__sqlserverdemo__username: myuser
+      SQLPAD_CONNECTIONS__sqlserverdemo__password: P@ssw0rd
+    ports:
+      - "8503:3000"
+    depends_on:
+      - db
