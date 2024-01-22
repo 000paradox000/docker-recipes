@@ -14,7 +14,7 @@ services:
     volumes:
       - ./config/custom.cnf:/etc/mysql/conf.d/custom.cnf
       - ./scripts/initdb:/docker-entrypoint-initdb.d
-      - ../data:/opt/data
+      - ../common/data:/opt/data
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin

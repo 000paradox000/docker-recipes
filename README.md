@@ -137,3 +137,30 @@ make down
 | Item           | Value                 | Description |
 |----------------|-----------------------|-------------|
 | Host URL       | http://localhost:8504 |             |
+
+## MongoDB
+
+Mongo DB database container.
+
+### Quickstart
+
+Start
+```shell
+cd recipes/db/mongodb
+make up
+```
+
+Stop
+```shell
+make down
+```
+
+### Web client
+
+#### mongo express
+
+| Item           | Value                 | Description |
+|----------------|-----------------------|-------------|
+| User           | myuser                |             |
+| Password       | P4ssw0rd              |             |
+| Host URL       | http://localhost:8505 |             |

@@ -11,7 +11,7 @@ services:
       - "5438:5432"
     volumes:
       - ./scripts/initdb:/docker-entrypoint-initdb.d
-      - ../data:/opt/data
+      - ../common/data:/opt/data
 
   pgadmin:
     image: dpage/pgadmin4

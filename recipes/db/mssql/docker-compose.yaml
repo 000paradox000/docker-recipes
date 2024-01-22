@@ -11,7 +11,7 @@ services:
       - "1438:1433"
     volumes:
       - ./scripts/initdb:/docker-entrypoint-initdb.d
-      - ../data:/opt/data
+      - ../common/data:/opt/data
 
   sqlpad:
     image: sqlpad/sqlpad

@@ -11,7 +11,7 @@ services:
       DB_PATH: "/opt/db/mydb.db"
     volumes:
       - ./scripts/initdb:/docker-entrypoint-initdb.d
-      - ../data:/opt/data
+      - ../common/data:/opt/data
       - ./db:/opt/db
     ports:
       - "8504:8080"

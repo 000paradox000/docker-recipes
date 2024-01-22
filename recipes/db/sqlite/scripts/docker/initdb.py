@@ -41,10 +41,10 @@ class INITDB:
         items = [item.split('|') for item in csv_data.split(';')]
 
         for table_name, path in items:
-            # cmd = f"(echo .mode csv ; echo .header on ; echo .import {path} {table_name} ) | sqlite3 {self.db_path}"
-            cmd = f"(echo .import --csv --skip 1 {path} {table_name} ) | sqlite3 {self.db_path}"
+            cmd = f"(echo .mode csv ; echo .header on ; echo .import {path} {table_name}) | sqlite3 {self.db_path}"
             print(cmd)
             os.system(cmd)
+
 
 def main():
     handler = INITDB()

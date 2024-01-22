@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: myuser
+      MONGO_INITDB_ROOT_PASSWORD: P4ssw0rd
+      MONGO_INITDB_DATABASE: mydb
+    ports:
+      - "27027:27017"
+    volumes:
+      - ./scripts/initdb:/docker-entrypoint-initdb.d
+      - ./scripts/nodejs:/opt/scripts/nodejs
+      - ../common/data:/opt/data
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - "8505:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: myuser
+      ME_CONFIG_MONGODB_ADMINPASSWORD: P4ssw0rd
+      ME_CONFIG_MONGODB_SERVER: db
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_BASICAUTH_USERNAME: myuser
+      ME_CONFIG_BASICAUTH_PASSWORD: P4ssw0rd
+    depends_on:
+      - db

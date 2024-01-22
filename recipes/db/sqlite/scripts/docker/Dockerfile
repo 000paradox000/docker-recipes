@@ -5,7 +5,7 @@ RUN apt-get update && \
 
 RUN pip install sqlite-web
 
-WORKDIR /db
+WORKDIR /opt/project
 
 COPY scripts/docker/entrypoint.sh entrypoint.sh
 COPY scripts/docker/initdb.py initdb.py
