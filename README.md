@@ -142,6 +142,16 @@ make down
 
 Mongo DB database container.
 
+### Credentials
+
+| Item             | Value    | Description |
+|------------------|----------|-------------|
+| User             | myuser   |             |
+| Password         | P4ssw0rd |             |
+| Database name    | mydb     |             |
+| Host port        | 27037    |             |
+| Container port   | 27017    |             |
+
 ### Quickstart
 
 Start
